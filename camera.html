@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Product Detection</title>
+    <link rel="stylesheet" href="camera.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="camera.html">Start AR</a></li>
+            <li><a href="product-details.html">Product Details</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- AR Camera Section -->
+    <div id="ar-section" class="section">
+        <div class="ar-camera-container">
+            <h2>Start AR Experience</h2>
+            <p>Use your camera to scan a product like a mobile phone or laptop for real-time product detection and information.</p>
+            <button class="camera-btn" onclick="startCamera()">Open Camera</button>
+            <div id="camera-container">
+                <video id="video" width="100%" height="auto" autoplay></video>
+            </div>
+            <div id="detected-info" class="detected-info">
+                <h3>Detected Product Information:</h3>
+                <p id="product-name">Product: N/A</p>
+                <p id="product-price">Price: N/A</p>
+                <p id="product-rating">Rating: N/A</p>
+                <p id="product-link">Buy it here: <a href="#" id="product-url" target="_blank">Amazon</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AR Product Detection</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ar.js"></script>
+</body>
+</html>
